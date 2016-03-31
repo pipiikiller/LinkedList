@@ -22,7 +22,7 @@ public class Main {
 				lm.add(node);
 				//System.out.println(node.getNext());
 			}
-		
+		System.out.println("Test");
 		System.out.println(lm.toString());
 			
 		} catch (FileNotFoundException e) {
