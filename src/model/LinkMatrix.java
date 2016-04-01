@@ -23,6 +23,30 @@ public class LinkMatrix {
 				
 		this.size++;
 	}
+	
+	
+	
+	public boolean searchElements (Object data){
+		
+		Node current=head;
+		if (head==null){
+			return 	false;
+			}else{
+		
+				
+				while(current!=null){
+					if(current.getData().toString().equals(data.toString())){
+						System.out.println("Found");
+						return true;
+						
+					}
+					current=current.getNext();
+				}
+				System.out.println("Not found");
+				return false;
+			}
+		
+	}
 	public int getSize(){
 		
 		return this.size;

@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Comparator;
+
 public class Node {
 
     Node next;
@@ -24,7 +26,9 @@ public class Node {
 
 
     }
-
+  
+    
+  
     public Node getNext(){
     	
     return this.next;
@@ -39,3 +43,4 @@ public class Node {
     	return  ""+this.data;
     }
 }
+

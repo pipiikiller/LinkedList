@@ -22,8 +22,12 @@ public class Main {
 				lm.add(node);
 				//System.out.println(node.getNext());
 			}
-		System.out.println("Test");
-		System.out.println(lm.toString());
+			System.out.println("Enter the price you would like to search");
+		Scanner sc1= new Scanner(System.in);
+		String sElement= sc1.nextLine();
+		Item sItem=new Item(sElement);
+		System.out.println(lm.searchElements(sItem));
+		//System.out.println(lm.toString());
 			
 		} catch (FileNotFoundException e) {
 			
